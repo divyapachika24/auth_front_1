@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    color: #15bb47;
+    text-decoration: unset;
+}
+
+ul {
+    margin-left: 1.5rem;
+    list-style: none;
+  }
+  
+  button,
+  input[type="submit"] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .page{
+    padding: 5rem;
+  }
+
+  #header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c25e0;
+  }
+  #header .label {
+    margin: 0;
+    padding: 0 1rem;
+    color: #ffffff;
+  }
+  #header .auth-features {
+    height: 100%;
+    display: flex;
+  }
+
+  #header .auth-features button {
+    padding: 0 1rem;
+    background-color: #7c25e0;
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+
+  #header .auth-features button:hover {
+    background-color: #600e97;
+  }
+
+  /* form styling */
+  .form label,
+  .form input{
+    display: block;
+  }
+
+  .form input{
+    margin-bottom: 1rem;
+  }
+
+  .form label{
+    margin-bottom: 0.2rem;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="password"] {
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 1.0rem;
+    border: 1px solid #c9a1eb;
+    background-color: #f5efef;
+    border-radius: 9px;
+  }
+
+  .form input:focus {
+    border: 1px solid #8907f3;
+    box-shadow: inset 0px 0px 5px rgba(150, 68, 218, 0.3);
+    outline: none;
+  }
+
+  .form input[type="submit"] {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #8c20d3;
+    background-color: #c2a1dd;
+    font-size: 1.0rem;
+    border-radius: 8px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  /* error highlighter */
+  .error-highlight {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #e07c7c;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d6d6;
+  }
+  .error-highlight button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #df4343;
+    color: #ffffff;
+  }
+ 
+  /* to adjust the view on mobile screens */
+  @media screen and (max-width: 550px) {
+    #header .label {
+      font-size: 1.2rem;
+    }
+    #header .auth-features button {
+      padding: 0 0.4rem;
+      font-size: 0.9rem;
+    }
+  }
